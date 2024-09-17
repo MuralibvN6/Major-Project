@@ -7,8 +7,11 @@ the heavy computations that deep learning often requires. The result? A faster, 
 
 Who We Are:
 B. Venkata Muralidhara (Team Leader)
+
 V. Bhavana
+
 Y. Chetan
+
 S. Irfan Basha
 This project was guided by Mr. D.Y.S. Ponselvan, whose support and expertise helped shape our work.
 
