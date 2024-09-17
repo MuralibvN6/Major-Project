@@ -5,7 +5,7 @@ Our solution makes this process more efficient by using image processing techniq
 The idea is to take a regular image and turn it into a cartoon version by applying various filters and techniques—without getting bogged down by
 the heavy computations that deep learning often requires. The result? A faster, more streamlined cartoonization process that still maintains high-quality output.
 
-Who We Are
+Who We Are:
 B. Venkata Muralidhara (Team Leader)
 V. Bhavana
 Y. Chetan
