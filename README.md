@@ -6,6 +6,7 @@ The idea is to take a regular image and turn it into a cartoon version by applyi
 the heavy computations that deep learning often requires. The result? A faster, more streamlined cartoonization process that still maintains high-quality output.
 
 Who We Are:
+
 B. Venkata Muralidhara (Team Leader)
 
 V. Bhavana
@@ -13,6 +14,7 @@ V. Bhavana
 Y. Chetan
 
 S. Irfan Basha
+
 This project was guided by Mr. D.Y.S. Ponselvan, whose support and expertise helped shape our work.
 
 What the Project Does
