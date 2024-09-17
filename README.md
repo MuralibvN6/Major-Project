@@ -27,7 +27,7 @@ Steps to Run:
 Clone this repository:
 bash
 Copy code
-git clone https://github.com/your-repo-link
+git clone [https://github.com/](https://github.com/MuralibvN6/Major-Project)
 Open the cloned folder in MATLAB.
 Load your image into the workspace and run the provided .m scripts to process the image.
 Examples
