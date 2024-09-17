@@ -39,19 +39,16 @@ Steps to Run:
 
 Clone this repository:
 
-bash
-
-Copy code
-
 git clone [https://github.com/](https://github.com/MuralibvN6/Major-Project)
 
 Open the cloned folder in MATLAB.
 
 Load your image into the workspace and run the provided .m scripts to process the image.
 
-Why We Did This
+Why We Did This:
 
 Deep learning can sometimes feel like overkill when it comes to things like cartoonizing images. By focusing on traditional image processing techniques, we’ve managed to simplify the task, making it more efficient without compromising on the final product’s quality. This project can be a great starting point for anyone looking to learn image processing or experiment with basic MATLAB operations.
 
-License
+License:
+
 This project is licensed under the MIT License. Feel free to use, modify, and share it, as long as you give us credit. You can read more about the license here.
