@@ -43,6 +43,10 @@ git clone [https://github.com/](https://github.com/MuralibvN6/Major-Project)
 
 Open the cloned folder in MATLAB.
 
+Here are two codes for Image Conversion and Video Conversion.
+
+Carefully upload your code with proper file names for the Image and Video files and change them for various inputs to get different values.  
+
 Load your image into the workspace and run the provided .m scripts to process the image.
 
 Why We Did This:
