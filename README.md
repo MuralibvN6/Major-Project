@@ -15,7 +15,7 @@ Y. Chetan
 
 S. Irfan Basha
 
-This project was guided by Mr. D.Y.S. Ponselvan, whose support and expertise helped shape our work.
+This project was guided by **Mr. D.Y.S. Ponselvan**, whose support and expertise helped shape our work.
 
 What the Project Does
 Our MATLAB-based tool:
