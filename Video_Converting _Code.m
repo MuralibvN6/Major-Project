@@ -1,5 +1,5 @@
 % Prompt the user to select an MP4 file
-[filename, filepath] = uigetfile('*.File_format', 'Video_File_Name');
+[filename, filepath] = uigetfile('*.File_format', 'Video_File_Name');%ive the file name and its format in the respective places
 
 % Check if the user canceled the selection
 if isequal(filename,0)
@@ -15,6 +15,7 @@ vidReader = VideoReader(fullFilePath);
 
 % Create a VideoWriter object to write the cartoon video
 outputVideoFile = 'Video_File_Name.File_format';
+% give the output file name and format as the user want. Dont take the input file name and the output file name as same as both the files exist in the same folder or location while executing.
 vidWriter = VideoWriter(outputVideoFile, 'MPEG-4');
 open(vidWriter);
 
