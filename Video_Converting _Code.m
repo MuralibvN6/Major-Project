@@ -1,5 +1,5 @@
-% Prompt the user to select an MP4 file
-[filename, filepath] = uigetfile('*.File_format', 'Video_File_Name');%ive the file name and its format in the respective places
+ % Prompt the user to select an MP4 file
+[filename, filepath] = uigetfile('*.File_Format', 'Input_Video_File');
 
 % Check if the user canceled the selection
 if isequal(filename,0)
@@ -14,15 +14,15 @@ fullFilePath = fullfile(filepath, filename);
 vidReader = VideoReader(fullFilePath);
 
 % Create a VideoWriter object to write the cartoon video
-outputVideoFile = 'Video_File_Name.File_format';
-% give the output file name and format as the user want. Dont take the input file name and the output file name as same as both the files exist in the same folder or location while executing.
+outputVideoFile = 'Output_File_Name.File_Format';
 vidWriter = VideoWriter(outputVideoFile, 'MPEG-4');
 open(vidWriter);
 
 % Parameters for cartoon effect
-edgeThreshold = 0.08; % Adjust edge detection threshold
+edgeThreshold = 0.05; % Adjust edge detection threshold
 numColors = 8; % Number of colors for color quantization
 
+% Read and process each frame
 % Read and process each frame
 while hasFrame(vidReader)
     frame = readFrame(vidReader);
@@ -36,16 +36,16 @@ while hasFrame(vidReader)
     % Perform color quantization
     quantizedFrame = imquantize(frame, linspace(0, 1, numColors));
     
-    % Combine edge and quantized frames to create cartoon effect
-    % Set the values of the edge pixels to white in each color channel
-    for c = 1:size(frame, 3)
-        quantizedFrame(:,:,c) = quantizedFrame(:,:,c) .* (1 - edgeFrame) + 255 * edgeFrame;
-    end
+    % Create a mask for edges
+    edgeMask = repmat(edgeFrame, [1, 1, 3]); % Convert to 3 channels
+    
+    % Set edges to white in cartoonFrame
+    cartoonFrame = quantizedFrame;
+    cartoonFrame(edgeMask) = 255; % Set edges to white
     
     % Write the frame to the output video
-    writeVideo(vidWriter, uint8(quantizedFrame));
+    writeVideo(vidWriter, uint8(cartoonFrame));
 end
-
 % Close the video writer
 close(vidWriter);
 
